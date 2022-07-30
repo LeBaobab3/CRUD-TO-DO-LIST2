@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #86bbbd;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.todo-container {
+  color: #4d4d4d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  background: #a8dadc;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo {
+  width: 400px;
+}
+
+h2 {
+  padding: 10px;
+  font-size: 2rem;
+  color: #eb5e28;
+}
+
+input {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  height: 25px;
+  padding: 5px;
+  width: 100%;
+}
+
+input[type="text"],
+textarea {
+  background-color: #e0e6e4;
+}
+
+textarea {
+  display: block;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+}
+
+.todo-header button {
+  display: block;
+  color: #eb5e28;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  background-color: #4d4d4d;
+  font-family: "Edu TAS Beginner", sans-serif;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+.todo-list-item {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+}
+
+.todo-list-item-content {
+  font-size: 0.8rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.todo-list-item form {
+  width: 100%;
+  display: flex;
+}
+
+.todo-list-item input {
+  flex-grow: 2;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.todo-list-item .confirm {
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  background-color: #4d4d4d;
+  margin-left: 5px;
+  max-height: 30px;
+  font-family: "Edu TAS Beginner", sans-serif;
+  display: block;
+}
+
+.todo-list-item .cancel {
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  background-color: rgb(223, 43, 43);
+  margin-left: 5px;
+  max-height: 30px;
+  display: block;
+}
+
+.todo-list-item div {
+  flex-grow: 2;
+}
+
+.todo-list-item .edit {
+  color: #4d4d4d;
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.todo-list-item .remove {
+  color: #eb5e28;
+  margin-right: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
